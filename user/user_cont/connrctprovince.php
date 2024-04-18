@@ -1,8 +1,8 @@
 <?php
 $serverName = "localhost";
-$userName = "edonation";
-$userPassword = "edonate@FON";
-$dbName = "vote";
+$userName = "root";
+$userPassword = "";
+$dbName = "evaluation";
 $conn = mysqli_connect($serverName, $userName, $userPassword, $dbName);
 mysqli_set_charset($conn, "utf8");
 if (!$conn) {

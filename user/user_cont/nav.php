@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbar-ex-2">
             <div class="navbar-nav me-auto">
                 <a class="nav-item nav-link" href="evaluation0.php">แบบประเมิน</a>
-                <a class="nav-item nav-link" href="advice.php">คำแนะนำ</a>
+                <a class="nav-item nav-link" href="advice.php">คำแนะนำสำหรับบุคคลทั่วไป</a>
             </div>
         </div>
     </div>

@@ -268,12 +268,17 @@ include('user_cont/head.php');
                                                     $finishscore = $score + $scoreall;
 
                                                     $finishscore = $score + $scoreall;
-                                                    if ($finishscore >= 19 && $finishscore <= 46) {
+                                                    if ($finishscore >= 16 && $finishscore <= 23) {
                                                         $finishscore_TH = "เสี่ยงต่ำต่อการเป็นโรคเบาหวาน";
-                                                    } elseif ($finishscore >= 47 && $finishscore <= 57) {
+                                                    } elseif ($finishscore >= 24 && $finishscore <= 31) {
+                                                        $finishscore_TH = "เสี่ยงต่ำ-ปานกลางต่อการเป็นโรคเบาหวาน";
+                                                    } elseif ($finishscore >= 32 && $finishscore <= 39) {
+                                                        $finishscore_TH = "เสี่ยงปานกลาง-สูงต่อการเป็นโรคเบาหวาน";
+                                                    } elseif ($finishscore >= 40 && $finishscore <= 47) {
                                                         $finishscore_TH = "เสี่ยงสูงต่อการเป็นโรคเบาหวาน";
+                                                    } elseif ($finishscore >= 48 && $finishscore <= 53) {
+                                                        $finishscore_TH = "เสี่ยงสูงมากต่อการเป็นโรคเบาหวาน";
                                                     }
-
 
                                                     $insertQuery = "INSERT INTO form_4 (
                                                         province_name, district_name, subdistrict_name, fullname, tel, address, finishscore_TH, score_form1, score_form2, score_form3, score_form4, sex, age, status, study, height, weight, bmi, pressureup, pressuredown, waistline, fat, fatblood, bloodlevel, pregnant, ovary,

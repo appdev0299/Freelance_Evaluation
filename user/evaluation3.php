@@ -577,7 +577,7 @@ include('user_cont/head.php');
                                                             'มากกว่า 3 ครั้ง/สัปดาห์' => 1,
                                                         ),
                                                         'section12' => array(
-                                                            'ไม่เคย' => 1,
+                                                            'ไม่เคย' => 0,
                                                             'ปัจจุบันสูบอยู่' => 2,
                                                             'เคยสูบแต่เลิกแล้ว' => 2,
                                                         ),
@@ -592,7 +592,7 @@ include('user_cont/head.php');
                                                         ),
                                                         'section15' => array(
                                                             'ไม่เคยดื่ม' => 1,
-                                                            'ปัจจุบันดื่มอยู่' => 2,
+                                                            'ปัจจุบันดื่มอยู่' => 0,
                                                             'เคยดื่มแต่เลิกแล้ว' => 2,
                                                         ),
                                                         'section16' => array(
@@ -601,10 +601,10 @@ include('user_cont/head.php');
                                                             'ไวน์/สปาย' => 0,
                                                         ),
                                                         'section17' => array(
-                                                            'ไม่เคยดื่ม/ดื่มน้อยมาก' => 1,
-                                                            'ดื่มน้อย' => 1,
-                                                            'ดื่มปานกลาง' => 2,
-                                                            'ดื่มมาก' => 2,
+                                                            'ไม่เคยดื่ม/ดื่มน้อยมาก' => 0,
+                                                            'ดื่มน้อย' => 0,
+                                                            'ดื่มปานกลาง' => 0,
+                                                            'ดื่มมาก' => 0,
                                                         ),
                                                     );
                                                     $section1 = isset($_POST['section1']) ? $_POST['section1'] : '';
@@ -803,7 +803,6 @@ include('user_cont/head.php');
                                                         return null;
                                                     }
                                                 </script>
-
                                             </div>
                                         </div>
                                     </div>
@@ -828,7 +827,6 @@ include('user_cont/head.php');
     <script src="../assets/vendor/js/menu.js"></script>
     <script src="../assets/js/main.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-
     <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.6/dist/cookieconsent.js"></script>
     <script defer src="cc-init.js"></script>
 </body>
